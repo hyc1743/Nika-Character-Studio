@@ -93,6 +93,12 @@ A one-stop free AI role-playing studio inspired by Silly Tavern.
 - 现代浏览器（开启隐私模式会影响本地库的存储）
 - 可选：API密钥（用于AI功能）
 
+### Vercel 后端部署
+
+本仓库现在包含可部署到 Vercel 的后端基础设施：站点密码登录、Postgres 持久化、服务端 AI 代理、Vercel Blob 产物存储入口，以及 Vercel Queues 后台任务脚手架。部署前请先按 [docs/vercel-backend.md](docs/vercel-backend.md) 配置 Neon Postgres、Vercel Blob、环境变量，并执行 [db/schema.sql](db/schema.sql)。
+
+第一版不会自动迁移旧浏览器 IndexedDB 数据；旧数据可继续通过现有导入/导出功能手动搬运。
+
 ### 使用步骤
 1. 下载项目文件（Code --> Download Zip --> 解压）
 2. 在浏览器中打开 `index.html`

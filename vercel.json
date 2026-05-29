@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/queues/process-job.js": {
+      "experimentalTriggers": [
+        { "type": "queue/v2beta", "topic": "nika-jobs" }
+      ],
+      "maxDuration": 300
+    },
+    "api/ai/chat.js": {
+      "maxDuration": 300
+    }
+  }
+}
